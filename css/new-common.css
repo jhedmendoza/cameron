@@ -1,0 +1,298 @@
+.full-height-banner  {
+  height: 100vh;
+}
+.page-template-page-global-counsel .row {
+    max-width: 1440px;
+}
+
+.page-template-page-global-counsel .screen-reader-text {
+  right: 0;
+}
+
+
+
+.page-template-page-global-counsel .owl-item .overlay {
+  display: none;
+}
+
+.page-template-page-global-counsel .hero h1, .page-template-page-global-counsel .hero h2 {
+    font-size: 40px;
+}
+
+.page-template-page-global-counsel .owl-item .large-5 {
+  width: 50%;
+}
+
+
+.page-template-page-global-counsel .owl-theme .owl-nav .owl-prev,
+.page-template-page-global-counsel .owl-theme .owl-nav .owl-next {
+    background: rgba(255,255,255,.1);
+    width: 80px;
+    padding: 0;
+    border-radius: 0;
+    transition: all .4s ease;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-template-page-global-counsel .owl-theme .owl-nav .owl-prev:hover,
+.page-template-page-global-counsel .owl-theme .owl-nav .owl-next:hover {
+    background: rgba(255,255,255,.2);
+}
+.page-template-page-global-counsel .owl-theme .owl-nav .owl-prev:afte
+.page-template-page-global-counsel .owl-theme .owl-nav .owl-next:after {
+    font-size: 30px;
+}
+
+.page-template-page-global-counsel a.hero-apply {
+    font-family: 'Avenir Next W01 Light', Arial, sans-serif;
+    border-radius: 0;
+}
+
+
+
+.page-template-page-global-counsel .section-title {
+  color: #1C1C1C;
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+.page-template-page-global-counsel .section-title::after {
+  content: ' ';
+  display: block;
+  width: 75px;
+  height: 5px;
+  background-color: #4C2C7E;
+  margin: 10px 0 60px;
+}
+
+.page-template-page-global-counsel .posts-slider-section .section-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-box h3 {
+  font-size: 23px;
+  color: #1C1C1C;
+  margin-top: 12px;
+}
+
+.feature-box:hover h3 {
+  color: #ffffff;
+}
+
+.partnership-content .row {
+    display: flex;
+    align-items: center;
+}
+
+.partnership-content .row {
+    display: flex;
+    align-items: center;
+}
+
+.partnership-content ul li {
+    margin-bottom: 20px;
+    color: #5B5B5B;
+    list-style-type: none;
+}
+
+.partnership-content ul li::before {
+	background-image:url(https://cameronintellectualproperty.com/wp-content/themes/cameron/images/icon-check.svg);
+	width: 15px;
+	height: 11px;
+	background-size: contain;
+	display: inline-block;
+	content: ' ';
+	margin-right: 10px;
+}
+
+.liaison-section {
+    padding-top: 100px;
+}
+
+.liaison-section .row {
+    align-items: center;
+    display: flex;
+}
+
+.liaison-section .section-title {
+    margin-top: 0;
+}
+
+.liaison-section strong {
+    color: #4C2C7E;
+}
+
+.liaison-section p:last-child {
+  margin-bottom: 30px;
+}
+
+.block-listing {
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.bl-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.bl-item-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    height: auto;
+    width: 100%;
+}
+
+.bl-item-text .section-title {
+    font-size: 23px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: all .4s ease;
+}
+
+.bl-item-text .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 38px;
+}
+
+.bl-item-text p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.bl-item-text span {
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.bl-item-cta {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all .4s ease;
+  padding: 0 20px;
+}
+
+.bl-item:hover .bl-item-cta { 
+  top: 40%;
+  opacity: 1;
+}
+
+.bl-item:hover .bl-item-text .section-title {
+  margin-top: -50px;
+}
+
+.block-listing-row {
+    display: flex;
+    margin-left: -10px;
+}
+
+.row:nth-child(odd) .block-listing-row {
+    flex-direction: row-reverse;
+    margin-left: -20px;
+}
+
+.block-listing-bg {
+  background-size: cover;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .page-template-page-global-counsel .owl-prev,
+  .page-template-page-global-counsel .owl-next {
+    display: none !important;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .page-template-page-global-counsel .section-title {
+    font-size: 30px;
+  }
+
+  .block-listing .row .columns {
+    width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+
+  .block-listing-row {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .row:nth-child(odd) .block-listing-row {
+      flex-direction: column;
+      margin-left: 0;
+  }
+
+  .block-listing .section-title  {
+    position: relative;
+    z-index: 1;
+  }
+
+  .block-listing a img {
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 800px) { 
+  .page-template-page-global-counsel .section-title {
+    text-align: center;
+  }
+
+  .page-template-page-global-counsel .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media only screen and (max-width: 767px) { 
+
+  .page-template-page-global-counsel .hero h1, .page-template-page-global-counsel .hero h2 {
+    font-size: 30px;
+  }
+
+  .page-template-page-global-counsel .owl-item .large-5 {
+      width: 100%;
+  }
+
+  .partnership-content .row {
+    flex-direction: column;
+  }
+
+  .liaison-section .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .liaison-section .section-title {
+    margin-top: 30px;
+  }
+}
+
