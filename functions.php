@@ -119,6 +119,9 @@ function e_jquery() {
 
 function e_load_styles()
 {
+
+  $version = '1';
+
   wp_register_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', false, false, 'all' );
   wp_register_style( 'grid', get_template_directory_uri() . '/css/foundation.css', false, false, 'all' );
   wp_register_style( 'fontawesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css', false, false, 'all' );
@@ -135,15 +138,16 @@ function e_load_styles()
   wp_enqueue_style( 'swipebox-style' );
   wp_enqueue_style( 'style', get_stylesheet_uri(), array(), rand(111,9999), 'all' );
   wp_enqueue_style( 'us-style-css', get_stylesheet_directory_uri() . '/css/us-style.css', false, false, 'all' );
-  wp_enqueue_style( 'new-common-css', get_stylesheet_directory_uri() . '/css/new-common.css', false, false, 'all' );
+  wp_enqueue_style( 'new-common-css', get_stylesheet_directory_uri() . '/css/new-common.css?v=1', false, null, 'all' );
   wp_enqueue_style( 'knowledge-hub-css', get_stylesheet_directory_uri() . '/css/knowledge-hub.css', false, false, 'all' );
 }
 
 function e_load_scripts() {
+
   wp_enqueue_script('classie', get_template_directory_uri() . '/js/classie.js', false, '', true);
   wp_enqueue_script('owl-js', get_template_directory_uri() . '/js/owl/owl.carousel.min.js', false, '', true);
   wp_enqueue_script('swipebox-js', get_template_directory_uri() . '/js/swipebox/js/jquery.swipebox.min.js', false, '', true);
-  wp_enqueue_script('common-script', get_template_directory_uri() . '/js/common.js', array(), null, true);
+  wp_enqueue_script('common-script', get_template_directory_uri() . '/js/common.js?v=1', array(), null, true);
   wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/scripts.js', array(), null, true);
 }
 
@@ -303,7 +307,7 @@ function category_filter() {
 
   $category_name = sanitize_text_field($_POST['category']);
   $post_per_page = isset($_POST['page']) ? sanitize_text_field($_POST['page']) : 9;
-  
+
 
   $args = array(
     'post_type'       => 'post',
@@ -343,6 +347,16 @@ function category_filter() {
   }
   exit;
 }
+
+/**
+ * Enable vCard Upload
+ *
+ */
+function be_enable_vcard_upload( $mime_types ){
+    $mime_types['vcf'] = 'text/vcard';
+    return $mime_types;
+}
+add_filter('upload_mimes', 'be_enable_vcard_upload' );
 
 
 
